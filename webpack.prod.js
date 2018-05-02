@@ -8,6 +8,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 module.exports = merge.smart(require('./webpack.base.js'), {
   entry: {
     cms: './index',
+    extended: './extended',
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -37,7 +38,7 @@ module.exports = merge.smart(require('./webpack.base.js'), {
 
     // Extract CSS
     new ExtractTextPlugin({
-      filename: '[name].css',
+      filename: 'cms.css',
       allChunks: true
     }),
 
