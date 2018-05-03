@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Immutable from 'immutable';
 import ImmutablePropTypes from 'react-immutable-proptypes';
@@ -25,7 +26,15 @@ if (typeof window !== 'undefined') {
   window.initCMS = bootstrap;
   window.createClass = window.createClass || createReactClass;
   window.h = window.h || React.createElement;
-  Object.assign(window.CMS, { React, PropTypes, Immutable, ImmutablePropTypes, classNames, createReactClass });
+  Object.assign(window.CMS, {
+    React,
+    ReactDOM,
+    PropTypes,
+    Immutable,
+    ImmutablePropTypes,
+    classNames,
+    createReactClass
+  });
 }
 
 export { registry as default, bootstrap as init };
