@@ -75,6 +75,12 @@ CMS.registerWidget('categories', CategoriesControl, CategoriesPreview);
 </script>
 ```
 
+**Starters:**
+
+There are starters to make you quickly get started on creating widgets
+1. [Official Webpack Starter](https://github.com/netlify/netlify-cms-widget-starter)
+2. [Rollup Starter](https://github.com/ekoeryanto/netlify-cms-widget-starter-rollup)
+
 ## `registerEditorComponent`
 
 Register a block level component for the Markdown editor:
